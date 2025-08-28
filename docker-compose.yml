@@ -1,0 +1,23 @@
+services:
+  api:
+    build: .
+    container_name: encurtador_api
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - DB_HOST=db
+    depends_on:
+      - db
+
+  db:
+    image: mongo:latest
+    container_name: encurtador_db
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data: {}
