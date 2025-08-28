@@ -45,7 +45,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 
 1. Clone este repositório:
    ```bash
-   git clone [https://github.com/kauansantanaa/Encurtador-URL-api.git]
+   git clone https://github.com/kauansantanaa/Encurtador-URL-api.git
    ```
 
 2. Navegue até a pasta raiz do projeto:
